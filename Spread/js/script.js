@@ -52,4 +52,12 @@ $(document).ready(function () {
 
   });
 
+
+  $('.card').each(function(index) {
+    (function(that, i) {
+          that.addEventListener('animationend', function(e) {
+            $(that).removeClass("zoom-out"); 
+          });
+     })(this, index);
+   });
 });

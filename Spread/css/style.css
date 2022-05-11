@@ -93,7 +93,7 @@ body {
   color: #f8f9fa;
 }
 .card-card2 .card__value {
-  transform: translatex(-2px);
+  /* transform: translatex(-2px); */
 }
 .card-card2 .card__suit {
   margin-top: 0.8rem;
@@ -174,7 +174,7 @@ div.perspective {
 }
 .card-card4 {
   transform: rotate(-31deg) translate3d(-48.5%, -11.5%, 0);
-  background-image: url(../img/samantha.jpg);
+  background-image: url(../img/confectioner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -207,8 +207,10 @@ div.perspective {
   box-shadow: 0 1px 2px 0 rgba(151, 150, 146, 0.4), 0 2px 4px 0 rgba(151, 150, 146, 0.4);
 }
 
-.card-container.spread .card:hover{
-  box-shadow: 0 1px 10px 0 rgba(247, 187, 8, 0.588);
+.card-container.spread .card:hover:not(.zoom-in, .zoom-frontal, .zoom-out){
+  /* box-shadow: 0 1px 10px 0 rgba(247, 187, 8, 0.588); */
+  /* font-weight: 600; */
+  background-position: right;
 }
 .card-container.spread .zoom-in{
   animation-name: select-card;
@@ -226,8 +228,8 @@ div.perspective {
 transform: scale(1.5);
 z-index: 50;
 transition-duration: 550ms;
-
 }
+
 
 @keyframes card1 {
   0% {
@@ -250,8 +252,7 @@ transition-duration: 550ms;
   }
   100% {
     transform: scale(1.5);
-    z-index: 10;
-    
+    z-index: 10;  
   }
 }
 
